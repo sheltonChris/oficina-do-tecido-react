@@ -9,6 +9,11 @@ const GlobalStyled = createGlobalStyle`
     list-style: none;
 }
 
+@font-face {
+    font-family: Galter;
+    src: url('Galter.otf') format(opentype);
+}
+
 body {
     padding-bottom: 120px;
     background-color: ${(props) => (props.theme.Background)};

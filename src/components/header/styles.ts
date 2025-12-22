@@ -1,11 +1,31 @@
 import styled from "styled-components"
 
 export const Header = styled.header`
-padding: 20px;
+padding: 16px;
 display:flex;
 align-items: center;
 justify-content: space-between;
 background-color: ${(props) => (props.theme.MainColor)};
+
+`
+export const Logo = styled.img`
+height: 70px;
+width: 70px;
+border-radius: 50%;
+
+@media (max-width: 768px) {
+    height: 40px;
+    width: 40px;
+    }
+`
+
+export const Title = styled.h1`
+font-family: Galter, sans-serif;
+font-size: 40px;
+
+@media (max-width: 768px) {
+    font-size: 16px;
+    }
 `
 
 export const ButtonTheme = styled.button`

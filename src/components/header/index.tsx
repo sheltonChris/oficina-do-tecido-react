@@ -1,4 +1,4 @@
-import { ButtonTheme, Header as HeaderStyle } from "./styles"
+import { ButtonTheme, Header as HeaderStyle, Logo, Title } from "./styles"
 
 type Props = {
     Theme: () => void
@@ -7,8 +7,8 @@ type Props = {
 const Header = (props: Props) => {
     return (
         <HeaderStyle>
-            <img src="https://placehold.co/70" alt="" />
-            <h1>Oficina do Tecido</h1>
+            <Logo src="https://placehold.co/70" alt="" />
+            <Title>Oficina do Tecido</Title>
             <ButtonTheme onClick={props.Theme} ><img src="https://www.svgrepo.com/show/390804/sun-moon-eclipse.svg" alt="mudar tema" /></ButtonTheme>
         </HeaderStyle>
     )

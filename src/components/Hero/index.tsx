@@ -3,6 +3,7 @@ import { Button, HeroStyle, Img, SubTitle, Title, Ul } from "./styles"
 const Hero = () => {
     return (
         <HeroStyle>
+            <Img src="/img/hero-img.jpg" alt="" />
             <div>
                 <Title>Onde Costurar é uma arte</Title>
                 <SubTitle>Costura sob medida, unindo técnica, cuidado e atenção aos detalhes <br /> para valorizar cada peça</SubTitle>
@@ -16,7 +17,7 @@ const Hero = () => {
                 <Button>Saiba mais sobre nós</Button>
 
             </div>
-            <Img src="/img/hero-img.jpg" alt="" />
+
         </HeroStyle>
     )
 }

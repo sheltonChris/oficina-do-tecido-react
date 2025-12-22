@@ -1,10 +1,11 @@
 import styled from "styled-components";
 
 export const HeroStyle = styled.section`
-    min-height: 70vh;
+    min-height: 80vh;
     padding: 3vw;
     display: grid;
     gap: 5px;
+    direction: ltr;
     grid-template-columns: 1fr 1fr;
     text-align: center;
 
@@ -12,11 +13,16 @@ export const HeroStyle = styled.section`
         
     }
 
+    @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+
+    }
+
 `
 
 export const Title = styled.h1`
-font-family: Inter, sans-serif;
-font-size: 50px;
+font-family: Galter, sans-serif;
+font-size: 60px;
 margin: 50px auto;
 color: ${(props) => (props.theme.TextColor)};
 
@@ -42,6 +48,7 @@ margin-bottom: 50px;
         padding: 8px;
         font-size: 16px;
         margin: 8px;
+        color: ${(props) => (props.theme.TextColor)}
 
     }
 `
@@ -68,5 +75,9 @@ export const Button = styled.button`
     &:active {
         box-shadow: 0 2px 4px ${(props) => props.theme.MainColor};
         transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+        padding: 16px 15px;
     }
 `;
