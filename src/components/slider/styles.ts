@@ -20,13 +20,41 @@ export const Slide = styled.div`
     width: 100vw;
     height: 100%;
     flex-shrink: 0;
+    position: relative;
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
+`
+
+export const SlideContent = styled.div`
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 10vw;
+    color: #fff;
+
+    background: linear-gradient(
+        to right,
+        rgba(0, 0, 0, 0.55),
+        rgba(0, 0, 0, 0.15)
+    ) ;
+
+    h2 {
+        font-size: clamp(2rem, 4vw, 3.5rem);
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        max-width: 600px;
+    }
 `;
+
 
 export const NavAuto = styled.div`
     position: absolute;
@@ -50,4 +78,6 @@ export const AutoBtn = styled.div<{ $active: boolean }>`
     &:not(:last-child) {
         margin-right: 12px;
     }
-`;
+`
+
+
