@@ -3,6 +3,7 @@ import styled from "styled-components";
 export const HeroStyle = styled.section`
     min-height: 80vh;
     padding: 3vw;
+    margin: 60px 0;
     display: grid;
     gap: 5px;
     direction: ltr;
@@ -39,6 +40,17 @@ export const Img = styled.img`
 border-radius: 8px;
 width: 100%;
 height: 100%;
+
+@media (max-width: 1024px) {
+    width: 100%;
+height: 80%;
+}
+
+@media (max-width:767px) {
+    width: 100%;
+height: 100%;
+
+}
 
 `
 

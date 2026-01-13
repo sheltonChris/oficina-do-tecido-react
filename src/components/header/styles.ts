@@ -6,6 +6,9 @@ display:flex;
 align-items: center;
 justify-content: space-between;
 background-color: ${(props) => (props.theme.MainColor)};
+position: sticky;
+top: 0;
+z-index: 1;
 
 `
 export const Logo = styled.img`

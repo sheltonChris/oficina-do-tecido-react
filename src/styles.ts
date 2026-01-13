@@ -7,6 +7,7 @@ const GlobalStyled = createGlobalStyle`
     box-sizing: border-box;
     font-family: Inter, sans-serif;;
     list-style: none;
+    
 }
 
 @font-face {
@@ -18,6 +19,7 @@ body {
     padding-bottom: 120px;
     background-color: ${(props) => (props.theme.Background)};
     transition: 0.5s ease;
+    overflow-x: hidden;
 }
 
 .container {
